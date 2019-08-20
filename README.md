@@ -9,7 +9,7 @@ In order to do this, the University made a special **API REST Service** so that 
 
 **In the next image you can see for example how this App shows the user (the student that login) his schedule in the semester that he was attending at the moment (from the information it obtained from the API REST service)**. It also offered the option to tap on the class so that the student could see to what room was that class assigned.
 
-[screenshot](readmeimg/schedule.jpg)
+![screenshot](readmeimg/schedule.jpg)
 
 **This app was developed with XAMARIN in Visual Code. It used Entity Framework (ORM) for the backend with a MVVM architecture.**
 
