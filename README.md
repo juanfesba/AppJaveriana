@@ -11,6 +11,6 @@ In order to do this, the University made a special **API REST Service** so that 
 
 ![screenshot](readmeimg/schedule2.jpg)
 
-**This app was developed with XAMARIN in Visual Code. It used Entity Framework (ORM) for the backend with a MVVM architecture.**
+**This app was developed with XAMARIN in Visual Code. It used Entity Framework (ORM) for the backend with an MVVM architecture.**
 
 In the end this project was awarded as one of the best presented in the class.
