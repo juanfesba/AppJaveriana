@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana.iOS\\AppJaveriana.iOS.csproj": {}
+  },
+  "projects": {
+    "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana.iOS\\AppJaveriana.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana.iOS\\AppJaveriana.iOS.csproj",
+        "projectName": "AppJaveriana.iOS",
+        "projectPath": "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana.iOS\\AppJaveriana.iOS.csproj",
+        "packagesPath": "C:\\Users\\juanf\\.nuget\\packages\\",
+        "outputPath": "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\juanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana\\AppJaveriana.csproj": {
+                "projectPath": "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana\\AppJaveriana.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.0.0.425677, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana\\AppJaveriana.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana\\AppJaveriana.csproj",
+        "projectName": "AppJaveriana",
+        "projectPath": "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana\\AppJaveriana.csproj",
+        "packagesPath": "C:\\Users\\juanf\\.nuget\\packages\\",
+        "outputPath": "D:\\Universidad\\Semestre 9\\Moviles\\ProyectoFinal\\AppJaveriana\\AppJaveriana\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\juanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.0.0.425677, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

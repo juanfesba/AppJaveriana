@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:AppJaveriana.Views.Components"
+             mc:Ignorable="d"
+             x:Class="AppJaveriana.Views.LoginView">
+    <ContentPage.Resources>
+        <Style x:Key="LoginLabel" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="{local:ImageResource AppJaveriana.logojaveriana.png}" Margin="0, 70, 0, 40"/>
+            <Label Text="Usuario" FontSize="18" Margin="50, 0, 50, 0" />
+            <Entry Text="{Binding UserSession}" Placeholder="Escribe aquí..." Margin="50, 0, 50, 0"></Entry>
+            <Label Text="Contraseña" FontSize="18" Margin="50, 0, 50, 0" />
+            <Entry Text="{Binding PassSession}" Placeholder="Escribe aquí..." IsPassword="True" Margin="50, 0, 50, 0"></Entry>
+            <Button Text="Ingresar" Clicked="Login_Clicked" TextColor="White" BackgroundColor="#2C5697" Margin="80, 20, 80, 80" CornerRadius="10"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

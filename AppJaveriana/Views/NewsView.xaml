@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:AppJaveriana.Views.Components"
+             mc:Ignorable="d"
+             x:Class="AppJaveriana.Views.NewsView">
+    <ContentPage.Resources>
+        <Style x:Key="LoginLabel" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Source="{local:ImageResource AppJaveriana.iconjaveriana.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="7, 7, 0, 0" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Noticias y Eventos" BackgroundColor="#2C5697" FontSize="20" TextColor="White" Margin="0,12,0,9" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.configicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0, 7, 7, 0" Grid.Row="0" Grid.Column="2"
+                    Clicked="navProfile"/>
+        </Grid>
+
+        <ImageButton Source="{local:ImageResource AppJaveriana.newsicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0, 0, 0, 0" Grid.Row="1" Grid.Column="0"/>
+
+        <Grid Grid.Row="3" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Source="{local:ImageResource AppJaveriana.laptoplogo.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="0"
+                    Clicked="navLaptop"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.bookicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="1"
+                    Clicked="navBook"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.gradeicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="2"
+                    Clicked="navCourses"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.schedule.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="3"
+                    Clicked="navSchedule"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.newsicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0, 0, 0, 0" Grid.Row="0" Grid.Column="4"/>
+        </Grid>
+    </Grid>
+</ContentPage>

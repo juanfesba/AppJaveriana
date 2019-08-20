@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:AppJaveriana.Views.Components"
+             mc:Ignorable="d"
+             x:Class="AppJaveriana.Views.ScheduleView">
+    <ContentPage.Resources>
+        <Style x:Key="LoginLabel" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Source="{local:ImageResource AppJaveriana.iconjaveriana.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="7, 7, 0, 0" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Tu Horario" BackgroundColor="#2C5697" FontSize="20" TextColor="White" Margin="0,12,0,9" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.configicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0, 7, 7, 0" Grid.Row="0" Grid.Column="2"
+                    Clicked="navProfile"/>
+        </Grid>
+
+
+
+        <Grid Grid.Row="1" Grid.Column="0" ColumnSpacing="5" RowSpacing="5" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <BoxView BackgroundColor="#2C5697" Grid.Row="0" Grid.Column="0"></BoxView>
+            <Label Text="Hora" Grid.Row="0" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="0" Grid.Column="1"></BoxView>
+            <Label Text="LU" Grid.Row="0" Grid.Column="1" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="0" Grid.Column="2"></BoxView>
+            <Label Text="MA" Grid.Row="0" Grid.Column="2" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="0" Grid.Column="3"></BoxView>
+            <Label Text="MI" Grid.Row="0" Grid.Column="3" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="0" Grid.Column="4"></BoxView>
+            <Label Text="JU" Grid.Row="0" Grid.Column="4" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="0" Grid.Column="5"></BoxView>
+            <Label Text="VI" Grid.Row="0" Grid.Column="5" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="0" Grid.Column="6"></BoxView>
+            <Label Text="SA" Grid.Row="0" Grid.Column="6" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <BoxView BackgroundColor="#2C5697" Grid.Row="1" Grid.Column="0"></BoxView>
+            <Label Text="7:00" Grid.Row="1" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="2" Grid.Column="0"></BoxView>
+            <Label Text="8:00" Grid.Row="2" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="3" Grid.Column="0"></BoxView>
+            <Label Text="9:00" Grid.Row="3" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="4" Grid.Column="0"></BoxView>
+            <Label Text="10:00" Grid.Row="4" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="5" Grid.Column="0"></BoxView>
+            <Label Text="11:00" Grid.Row="5" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="6" Grid.Column="0"></BoxView>
+            <Label Text="12:00" Grid.Row="6" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="7" Grid.Column="0"></BoxView>
+            <Label Text="13:00" Grid.Row="7" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="8" Grid.Column="0"></BoxView>
+            <Label Text="14:00" Grid.Row="8" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="9" Grid.Column="0"></BoxView>
+            <Label Text="15:00" Grid.Row="9" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="10" Grid.Column="0"></BoxView>
+            <Label Text="16:00" Grid.Row="10" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="11" Grid.Column="0"></BoxView>
+            <Label Text="17:00" Grid.Row="11" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="12" Grid.Column="0"></BoxView>
+            <Label Text="18:00" Grid.Row="12" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="13" Grid.Column="0"></BoxView>
+            <Label Text="19:00" Grid.Row="13" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="14" Grid.Column="0"></BoxView>
+            <Label Text="20:00" Grid.Row="14" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <BoxView BackgroundColor="#2C5697" Grid.Row="15" Grid.Column="0"></BoxView>
+            <Label Text="21:00" Grid.Row="15" Grid.Column="0" TextColor="#F8CD00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <ImageButton x:Name="x1y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="1" Grid.Column="1" Clicked="getRoom" BindingContext="01x01"/>
+            <ImageButton x:Name="x2y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="2" Grid.Column="1" Clicked="getRoom" BindingContext="02x01"/>
+            <ImageButton x:Name="x3y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="3" Grid.Column="1" Clicked="getRoom" BindingContext="03x01"/>
+            <ImageButton x:Name="x4y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="4" Grid.Column="1" Clicked="getRoom" BindingContext="04x01"/>
+            <ImageButton x:Name="x5y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="5" Grid.Column="1" Clicked="getRoom" BindingContext="05x01"/>
+            <ImageButton x:Name="x6y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="6" Grid.Column="1" Clicked="getRoom" BindingContext="06x01"/>
+            <ImageButton x:Name="x7y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="7" Grid.Column="1" Clicked="getRoom" BindingContext="07x01"/>
+            <ImageButton x:Name="x8y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="8" Grid.Column="1" Clicked="getRoom" BindingContext="08x01"/>
+            <ImageButton x:Name="x9y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="9" Grid.Column="1" Clicked="getRoom" BindingContext="09x01"/>
+            <ImageButton x:Name="x10y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="10" Grid.Column="1" Clicked="getRoom" BindingContext="10x01"/>
+            <ImageButton x:Name="x11y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="11" Grid.Column="1" Clicked="getRoom" BindingContext="11x01"/>
+            <ImageButton x:Name="x12y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="12" Grid.Column="1" Clicked="getRoom" BindingContext="12x01"/>
+            <ImageButton x:Name="x13y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="13" Grid.Column="1" Clicked="getRoom" BindingContext="13x01"/>
+            <ImageButton x:Name="x14y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="14" Grid.Column="1" Clicked="getRoom" BindingContext="14x01"/>
+            <ImageButton x:Name="x15y1" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="15" Grid.Column="1" Clicked="getRoom" BindingContext="15x01"/>
+
+
+            <ImageButton x:Name="x1y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="1" Grid.Column="2" Clicked="getRoom" BindingContext="01x02"/>
+            <ImageButton x:Name="x2y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="2" Grid.Column="2" Clicked="getRoom" BindingContext="02x02"/>
+            <ImageButton x:Name="x3y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="3" Grid.Column="2" Clicked="getRoom" BindingContext="03x02"/>
+            <ImageButton x:Name="x4y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="4" Grid.Column="2" Clicked="getRoom" BindingContext="04x02"/>
+            <ImageButton x:Name="x5y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="5" Grid.Column="2" Clicked="getRoom" BindingContext="05x02"/>
+            <ImageButton x:Name="x6y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="6" Grid.Column="2" Clicked="getRoom" BindingContext="06x02"/>
+            <ImageButton x:Name="x7y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="7" Grid.Column="2" Clicked="getRoom" BindingContext="07x02"/>
+            <ImageButton x:Name="x8y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="8" Grid.Column="2" Clicked="getRoom" BindingContext="08x02"/>
+            <ImageButton x:Name="x9y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="9" Grid.Column="2" Clicked="getRoom" BindingContext="09x02"/>
+            <ImageButton x:Name="x10y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="10" Grid.Column="2" Clicked="getRoom" BindingContext="10x02"/>
+            <ImageButton x:Name="x11y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="11" Grid.Column="2" Clicked="getRoom" BindingContext="11x02"/>
+            <ImageButton x:Name="x12y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="12" Grid.Column="2" Clicked="getRoom" BindingContext="12x02"/>
+            <ImageButton x:Name="x13y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="13" Grid.Column="2" Clicked="getRoom" BindingContext="13x02"/>
+            <ImageButton x:Name="x14y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="14" Grid.Column="2" Clicked="getRoom" BindingContext="14x02"/>
+            <ImageButton x:Name="x15y2" Source="{local:ImageResource AppJaveriana.white.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,0,0,0" Grid.Row="15" Grid.Column="2" Clicked="getRoom" BindingContext="15x02"/>
+
+            <ImageButton x:Name="x1y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="1" Grid.Column="3" Clicked="getRoom" BindingContext="01x03"/>
+            <ImageButton x:Name="x2y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="2" Grid.Column="3" Clicked="getRoom" BindingContext="02x03"/>
+            <ImageButton x:Name="x3y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="3" Grid.Column="3" Clicked="getRoom" BindingContext="03x03"/>
+            <ImageButton x:Name="x4y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="4" Grid.Column="3" Clicked="getRoom" BindingContext="04x03"/>
+            <ImageButton x:Name="x5y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="5" Grid.Column="3" Clicked="getRoom" BindingContext="05x03"/>
+            <ImageButton x:Name="x6y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="6" Grid.Column="3" Clicked="getRoom" BindingContext="06x03"/>
+            <ImageButton x:Name="x7y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="7" Grid.Column="3" Clicked="getRoom" BindingContext="07x03"/>
+            <ImageButton x:Name="x8y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="8" Grid.Column="3" Clicked="getRoom" BindingContext="08x03"/>
+            <ImageButton x:Name="x9y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="9" Grid.Column="3" Clicked="getRoom" BindingContext="09x03"/>
+            <ImageButton x:Name="x10y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="10" Grid.Column="3" Clicked="getRoom" BindingContext="10x03"/>
+            <ImageButton x:Name="x11y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="11" Grid.Column="3" Clicked="getRoom" BindingContext="11x03"/>
+            <ImageButton x:Name="x12y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="12" Grid.Column="3" Clicked="getRoom" BindingContext="12x03"/>
+            <ImageButton x:Name="x13y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="13" Grid.Column="3" Clicked="getRoom" BindingContext="13x03"/>
+            <ImageButton x:Name="x14y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="14" Grid.Column="3" Clicked="getRoom" BindingContext="14x03"/>
+            <ImageButton x:Name="x15y3" Source="{local:ImageResource AppJaveriana.white.png}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Margin="0,0,0,0" Grid.Row="15" Grid.Column="3" Clicked="getRoom" BindingContext="15x03"/>
+
+            <ImageButton x:Name="x1y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="1" Grid.Column="4" Clicked="getRoom" BindingContext="01x04"/>
+            <ImageButton x:Name="x2y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="2" Grid.Column="4" Clicked="getRoom" BindingContext="02x04"/>
+            <ImageButton x:Name="x3y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="3" Grid.Column="4" Clicked="getRoom" BindingContext="03x04"/>
+            <ImageButton x:Name="x4y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="4" Grid.Column="4" Clicked="getRoom" BindingContext="04x04"/>
+            <ImageButton x:Name="x5y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="5" Grid.Column="4" Clicked="getRoom" BindingContext="05x04"/>
+            <ImageButton x:Name="x6y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="6" Grid.Column="4" Clicked="getRoom" BindingContext="06x04"/>
+            <ImageButton x:Name="x7y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="7" Grid.Column="4" Clicked="getRoom" BindingContext="07x04"/>
+            <ImageButton x:Name="x8y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="8" Grid.Column="4" Clicked="getRoom" BindingContext="08x04"/>
+            <ImageButton x:Name="x9y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="9" Grid.Column="4" Clicked="getRoom" BindingContext="09x04"/>
+            <ImageButton x:Name="x10y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="10" Grid.Column="4" Clicked="getRoom" BindingContext="10x04"/>
+            <ImageButton x:Name="x11y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="11" Grid.Column="4" Clicked="getRoom" BindingContext="11x04"/>
+            <ImageButton x:Name="x12y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="12" Grid.Column="4" Clicked="getRoom" BindingContext="12x04"/>
+            <ImageButton x:Name="x13y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="13" Grid.Column="4" Clicked="getRoom" BindingContext="13x04"/>
+            <ImageButton x:Name="x14y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="14" Grid.Column="4" Clicked="getRoom" BindingContext="14x04"/>
+            <ImageButton x:Name="x15y4" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="15" Grid.Column="4" Clicked="getRoom" BindingContext="15x04"/>
+
+            <ImageButton x:Name="x1y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="1" Grid.Column="5" Clicked="getRoom" BindingContext="01x05"/>
+            <ImageButton x:Name="x2y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="2" Grid.Column="5" Clicked="getRoom" BindingContext="02x05"/>
+            <ImageButton x:Name="x3y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="3" Grid.Column="5" Clicked="getRoom" BindingContext="03x05"/>
+            <ImageButton x:Name="x4y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="4" Grid.Column="5" Clicked="getRoom" BindingContext="04x05"/>
+            <ImageButton x:Name="x5y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="5" Grid.Column="5" Clicked="getRoom" BindingContext="05x05"/>
+            <ImageButton x:Name="x6y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="6" Grid.Column="5" Clicked="getRoom" BindingContext="06x05"/>
+            <ImageButton x:Name="x7y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="7" Grid.Column="5" Clicked="getRoom" BindingContext="07x05"/>
+            <ImageButton x:Name="x8y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="8" Grid.Column="5" Clicked="getRoom" BindingContext="08x05"/>
+            <ImageButton x:Name="x9y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="9" Grid.Column="5" Clicked="getRoom" BindingContext="09x05"/>
+            <ImageButton x:Name="x10y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="10" Grid.Column="5" Clicked="getRoom" BindingContext="10x05"/>
+            <ImageButton x:Name="x11y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="11" Grid.Column="5" Clicked="getRoom" BindingContext="11x05"/>
+            <ImageButton x:Name="x12y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="12" Grid.Column="5" Clicked="getRoom" BindingContext="12x05"/>
+            <ImageButton x:Name="x13y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="13" Grid.Column="5" Clicked="getRoom" BindingContext="13x05"/>
+            <ImageButton x:Name="x14y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="14" Grid.Column="5" Clicked="getRoom" BindingContext="14x05"/>
+            <ImageButton x:Name="x15y5" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="15" Grid.Column="5" Clicked="getRoom" BindingContext="15x05"/>
+
+            <ImageButton x:Name="x1y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="1" Grid.Column="6" Clicked="getRoom" BindingContext="01x06"/>
+            <ImageButton x:Name="x2y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="2" Grid.Column="6" Clicked="getRoom" BindingContext="02x06"/>
+            <ImageButton x:Name="x3y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="3" Grid.Column="6" Clicked="getRoom" BindingContext="03x06"/>
+            <ImageButton x:Name="x4y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="4" Grid.Column="6" Clicked="getRoom" BindingContext="04x06"/>
+            <ImageButton x:Name="x5y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="5" Grid.Column="6" Clicked="getRoom" BindingContext="05x06"/>
+            <ImageButton x:Name="x6y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="6" Grid.Column="6" Clicked="getRoom" BindingContext="06x06"/>
+            <ImageButton x:Name="x7y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="7" Grid.Column="6" Clicked="getRoom" BindingContext="07x06"/>
+            <ImageButton x:Name="x8y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="8" Grid.Column="6" Clicked="getRoom" BindingContext="08x06"/>
+            <ImageButton x:Name="x9y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="9" Grid.Column="6" Clicked="getRoom" BindingContext="09x06"/>
+            <ImageButton x:Name="x10y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="10" Grid.Column="6" Clicked="getRoom" BindingContext="10x06"/>
+            <ImageButton x:Name="x11y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="11" Grid.Column="6" Clicked="getRoom" BindingContext="11x06"/>
+            <ImageButton x:Name="x12y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="12" Grid.Column="6" Clicked="getRoom" BindingContext="12x06"/>
+            <ImageButton x:Name="x13y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="13" Grid.Column="6" Clicked="getRoom" BindingContext="13x06"/>
+            <ImageButton x:Name="x14y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="14" Grid.Column="6" Clicked="getRoom" BindingContext="14x06"/>
+            <ImageButton x:Name="x15y6" Source="{local:ImageResource AppJaveriana.white.png}"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,0" Grid.Row="15" Grid.Column="6" Clicked="getRoom" BindingContext="15x06"/>
+            
+
+
+
+
+        </Grid>
+
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="prueba" Text="Haz click sobre cada clase en el horario para ver el salon." Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" TextColor="#2C5697" FontSize="14" LineBreakMode="WordWrap"/>
+            <Button Text="Otros Horarios" TextColor="White" BackgroundColor="#2C5697" Margin="2, 5, 2, 5" CornerRadius="10" Grid.Row="0" Grid.Column="1"></Button>
+        </Grid>
+
+        
+        
+
+
+        
+
+
+        <Grid Grid.Row="3" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Source="{local:ImageResource AppJaveriana.laptoplogo.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="0"
+                    Clicked="navLaptop"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.bookicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="1"
+                    Clicked="navBook"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.gradeicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="2"
+                    Clicked="navCourses"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.schedule.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0, 0, 0, 0" Grid.Row="0" Grid.Column="3"/>
+            <ImageButton Source="{local:ImageResource AppJaveriana.newsicon.png}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5, 10, 5, 0" Grid.Row="0" Grid.Column="4"
+                    Clicked="navNews"/>
+        </Grid>
+    </Grid>
+</ContentPage>

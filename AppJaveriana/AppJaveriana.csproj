@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Compile Remove="NewFolder2\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder2\**" />
+    <None Remove="NewFolder1\**" />
+    <None Remove="NewFolder2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bookicon.png" />
+    <None Remove="colombia.jpg" />
+    <None Remove="configicon.png" />
+    <None Remove="grade.png" />
+    <None Remove="gradeicon.png" />
+    <None Remove="grades.png" />
+    <None Remove="iconjaveriana.png" />
+    <None Remove="laptoplogo.png" />
+    <None Remove="logojaveriana.jpg" />
+    <None Remove="logojaveriana.png" />
+    <None Remove="newsicon.png" />
+    <None Remove="schedule.png" />
+    <None Remove="shield.png" />
+    <None Remove="shield2.png" />
+    <None Remove="white.png" />
+    <None Remove="yellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="bookicon.png" />
+    <EmbeddedResource Include="colombia.jpg" />
+    <EmbeddedResource Include="configicon.png" />
+    <EmbeddedResource Include="grade.png" />
+    <EmbeddedResource Include="gradeicon.png" />
+    <EmbeddedResource Include="grades.png" />
+    <EmbeddedResource Include="iconjaveriana.png" />
+    <EmbeddedResource Include="laptoplogo.png" />
+    <EmbeddedResource Include="logojaveriana.jpg" />
+    <EmbeddedResource Include="logojaveriana.png" />
+    <EmbeddedResource Include="newsicon.png" />
+    <EmbeddedResource Include="schedule.png" />
+    <EmbeddedResource Include="shield.png" />
+    <EmbeddedResource Include="shield2.png" />
+    <EmbeddedResource Include="white.png" />
+    <EmbeddedResource Include="yellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\BooksView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CoursesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DetailCourseView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LaptopView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoginView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NewsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ProfileView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ScheduleView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
